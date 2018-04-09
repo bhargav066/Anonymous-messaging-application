@@ -1,0 +1,2 @@
+# Anonymous-messaging-application-in-python
+This project is different approach to instant messaging which uses tor network to reach your contacts without relying on messaging servers it creates a hidden service, which is used to make a peer to peer connection with your contacts without revealing your location or IP address It provides anonymity to users so no knows where messages are going are where they came from, It also provides end to end encryption of messages with a shared key, so only intended recipient can decrypt it.
