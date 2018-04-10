@@ -85,7 +85,10 @@ if __name__ == '__main__':
     def index():
         s=encode(encrypt_key,str(msgs_of_user))
         return s
-    hidden_svc_dir = "c:/temp/"
+    if os.name=="nt":
+        hidden_svc_dir = "c:/temp/"
+    else:
+         hidden_svc_dir = "/var/lib/tor/hidden_service/"
     svc_name = open(hidden_svc_dir + "/hostname", "r").read().strip()
     print("your id:",svc_name)
     n=svc_name.find(".")

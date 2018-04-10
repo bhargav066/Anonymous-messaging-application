@@ -1,7 +1,12 @@
 import torify
 import socket
 import urllib.request
-torify.set_tor_proxy("127.0.0.1", 9150)
+import os
+if os.name=="nt":
+    port=9150
+else:
+    port=9050
+torify.set_tor_proxy("127.0.0.1", port)
 torify.disable_tor_check()
 torify.use_tor_proxy()
 def torr(address):
