@@ -14,4 +14,8 @@ run the main script
 edit torrc and uncomment below two line and change port to 5000
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:5000
+install flask,psutil,torify modules using pip3
+pip3 install flask
+pip3 install psutil
+pip3 install pytorify
 run tor before running main script
